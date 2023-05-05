@@ -1,0 +1,10 @@
+clear all;
+a=linspace(0,pi/2,100);
+b=linspace(0,pi/2,100);
+c=linspace(0,pi/2,100);
+d=linspace(-pi/12,pi/12,100);
+figure;
+x=(30.*cos(a+b+c)+25.*cos(a+b)+22.5.*cos(a)+10).*cos(d);
+y=(30.*cos(a+b+c)+25.*cos(a+b)+22.5.*cos(a)+10).*sin(d);
+z=-(30.*sin(a+b+c)+25.*sin(a+b)+22.5.*sin(a));
+scatter3(x,y,z,'filled');
